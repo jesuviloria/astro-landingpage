@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/layout.astro";
+
+// components
+import Hero from "../components/landing/hero.astro";
+import More from "../components/landing/more.astro";
+import Features from "../components/landing/features.astro";
+import Projects from "../components/landing/projects.astro";
+import About from "../components/landing/about.astro";
+---
+
+<Layout title="Welcome to my site">
+  <Hero />
+  <More />
+  <Features />
+  <About />
+  <Projects />
+</Layout>
+
+<style>
+  :global(h1) {
+    margin: 2rem 0;
+  }
+
+  main {
+    max-width: 1440px;
+    margin: auto;
+  }
+</style>
